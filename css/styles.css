@@ -87,7 +87,7 @@ img {
 .page-header {
   border-bottom: 1px solid var(--border-container);
 }
-.main-nav {
+.page-header__main-nav {
   display: flex;
   align-items: center;
   gap: 318px;
@@ -97,20 +97,20 @@ img {
   display: flex;
   align-items: center;
 }
-.site-nav-ul {
+.site-nav__menu {
   display: flex;
   align-items: center;
   margin-left: 93px;
 }
 
-.site-nav-ul .item .current {
+.site-nav__item--current {
   position: relative;
 }
-.site-nav-ul .item + .item {
+.site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -125,18 +125,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--button-link-color);
   text-decoration: none;
 }
 
-.site-nav .link.current {
+.site-nav__link--current {
   color: var(--button-link-color);
   text-decoration: none;
 }
 
-.link.current::after {
+.site-nav__link--current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -152,11 +152,11 @@ img {
   align-self: center;
   margin-left: 0;
 }
-.auth-nav .item + .item {
+.auth-nav__item {
   margin-left: 30px;
 }
 
-.site-nav-contact {
+.auth-nav__contact {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -170,29 +170,26 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-contact:hover,
-.site-nav-contact:focus {
+.auth-nav__contact:hover,
+.auth-nav__contact:focus {
   color: var(--button-link-color);
 }
 
-.icon-phone {
+.auth-nav__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.logo,
-.web {
-  font-family: Raleway;
+.logo {
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-.logo {
   color: var(--primary-black-color);
 }
 
-.web {
+.logo__web {
   color: var(--button-link-color);
 }
 
@@ -854,12 +851,8 @@ position: relative;
   padding-bottom: 60px;
   background-color: var(--bgr-footer);
 }
-.footer-logo {
+.footer__logo {
   color: var(--primary-white-color);
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
 }
 .footer-position,
 .footer-link {
