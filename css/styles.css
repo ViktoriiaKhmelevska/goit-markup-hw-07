@@ -106,7 +106,7 @@ img {
 .site-nav__item--current {
   position: relative;
 }
-.site-nav__item {
+.site-nav__item:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -152,7 +152,7 @@ img {
   align-self: center;
   margin-left: 0;
 }
-.auth-nav__item {
+.auth-nav__item:not(:first-child) {
   margin-left: 30px;
 }
 
