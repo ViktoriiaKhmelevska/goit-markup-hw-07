@@ -237,6 +237,7 @@ img {
 .button-active:focus {
   background-color: var(--button-active);
 }
+
 .overlay {
   position: relative;
   max-width: 1600px;
@@ -443,7 +444,6 @@ position: relative;
 
   color: rgba(117, 117, 117, 1);
 }
-
 
 .checkbox__link {
   font-style: normal;
@@ -777,6 +777,7 @@ position: relative;
   border-right: 1px solid var(--border-project);
   border-bottom: 1px solid var(--border-project);
 }
+
 
 .client__list {
   display: flex;
