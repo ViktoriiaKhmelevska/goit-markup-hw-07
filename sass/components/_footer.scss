@@ -152,7 +152,7 @@ button {
     left: 16px;
     transform: translateY(-50%);
     background-color: inherit;
-    color: $footer-main-color;
+    color: currentColor;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -167,7 +167,6 @@ button {
   align-items: center;
   justify-content: center;
   background: inherit;
-  color: $primary-white-color;
   height: 50px;
   width: 200px;
   background: $button-link-color;
